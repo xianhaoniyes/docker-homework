@@ -2,10 +2,10 @@
 FROM java:8
 
 # 拷贝JRA包
-COPY build/libs/bob-0.0.1-SNAPSHOT.jar app.jar
+COPY build/libs/bob-0.0.1-SNAPSHOT.jar bob.jar
 
 # 容器启动时执行
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","/bob.jar"]
 
 # 暴露端口
-EXPOSE 8080
+EXPOSE 8081
